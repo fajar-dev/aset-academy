@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #f6f8fd;
+}
+
+.sub{
+  color: #0d6efd;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.judul{
+  font-weight: 600;
+  color: #34364a;
+  font-size: 32px;
+}
+
+a{
+  color: #000000;
+	text-decoration: none;
+}
+
+.wraper{
+  margin: 100px 0;
+}
+@media (min-width: 992px) { 
+  .wraper{
+    margin: 200px 0;
+  }
+} 
+
+/*modal*/
+.modal-content {
+	border-color: transparent !important;
+}
+.modal-header {
+	padding-bottom: -50px;
+	border-bottom: transparent;
+}
+.modal-header button {
+	font-size: 24px;
+}
+
+
+/*------navbar--------*/
+.nav-link {
+  text-align: center;
+  margin: 10px;
+  color: #34364a !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+nav .btn{
+  border-radius: 50px;
+}
+
+@media (min-width: 992px) { 
+  .nav-link{
+    margin: 20px;
+  }
+  .nav-link {
+		margin-right: 30px;
+		font-size: 16px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #2447f9;
+		width: 50%;
+		margin: auto;
+		padding-top: 5px;
+		margin-bottom: -8px;
+	}
+  nav .btn{
+    padding: 10px 40px 10px 40px;
+    border-radius: 50px;
+  
+  }
+}  
+
+
+/*-------jumbotron-------*/
+.jumbotron h1{
+  font-size: 35px !important;
+}
+.jumbotron .btn{
+  padding: 10px 50px 10px 50px;
+  border-radius: 50px;
+}
+
+
+/*-------fitur-------*/
+.fitur .card{
+ border: none;
+ padding: 20px;
+ border-radius: 20px;
+}
+.fitur .card h4{
+  font-weight: 600;
+}
+@media (min-width: 992px) { 
+  .fitur .tinggi{
+    height: 80px;
+  }
+}  
+
+/*-------kelas-------*/
+.kelas .card{
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+}
+.kelas .btn{
+  border-radius: 20px;
+}
+.kelas img{
+  border-radius: 10px;
+  height: 370px;
+}
+.efek {
+	display: block;
+	position: relative;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.efek:hover,
+.efek:focus,
+.efek:active {
+	transform: translateY(-10px);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kelas .poster .card-img-top {
+	opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.kelas .efek .zoom {
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.kelas .poster:hover .card-img-top {
+  opacity: 0.3;
+}
+.kelas .poster:hover .zoom {
+  opacity: 1;
+}
+.kelas .poster .icon {
+  margin-top: -150px;
+	font-size: 48px;
+	color: #0d6efd;
+}
+
+
+/*-------harga-------*/
+.tanya .btn{
+  padding: 8px 40px 8px 40px;
+  border-radius: 50px;
+}
+
+
+/*-------Testimoni-------*/
+.testimoni .card{
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+}
+.testimoni .card h3{
+  font-weight: 600;
+}
+.testimoni img {
+  border-radius: 100%;
+}
+.testimoni .fa-star{
+  color: #f4a42b;
+  font-size: 24px;
+}
+.testimoni .kata{
+  height: 140px;
+}
+
+/*-------footer-------*/
+footer{
+  padding: 50px 0;
+}
+.copyright-text{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+/*-------Daftar-------*/
+.form{
+  margin: 40px 0;
+}
+.form .card{
+  padding: 50px 20px;
+  border: none;
+  border-radius: 20px;
+}
+.form .btn{
+  padding: 8px 40px 8px 40px;
+  border-radius: 50px;
+}
+.form .back{
+  font-weight: 400;
+  font-size: 24px;
+}
+.form a{
+  color: #6487d3 !important;
+}
+.form a:hover{
+  color: #497ecf !important;
+}
+@media (min-width: 992px) { 
+  .form .card{
+    padding: 100px;
+    border: none;
+    border-radius: 10px;
+  }
+} 
+
+
+/*-----alert-------*/
+.alert .card{
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 18px;
+
+}
+
+/*-----congratulation-------*/
+.sukses{
+  margin-top: 100px;
+}
+.sukses h1{
+  font-weight: 600;
+  font-size: 56px;
+}
+.sukses .card{
+padding: 10px;
+border: none;
+border-radius: 10px;
+}
